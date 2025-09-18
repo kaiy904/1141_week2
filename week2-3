@@ -1,0 +1,14 @@
+# 攝氏 <-> 華氏 轉換 (不使用函數)
+
+choice = input("請選擇轉換方式：1. 攝氏 -> 華氏  2. 華氏 -> 攝氏 : ")
+
+if choice == "1":
+    c = float(input("輸入攝氏溫度："))
+    f = (c * 9/5) + 32
+    print("華氏溫度 =", round(f, 2), "°F")
+elif choice == "2":
+    f = float(input("輸入華氏溫度："))
+    c = (f - 32) * 5/9
+    print("攝氏溫度 =", round(c, 2), "°C")
+else:
+    print("輸入錯誤，請輸入 1 或 2")
